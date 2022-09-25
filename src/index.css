@@ -1,3 +1,92 @@
 @tailwind base;
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+body {
+  font-family: 'Dosis', monospace;
+  background-color: #fafafa;
+  background-image: linear-gradient(to right, #f9fafb, #d1d5db);
+}
+
+.react-calendar {
+  border-radius: 8px;
+  width: 400px !important;
+  height: 420px;
+  min-height: 420px;
+  border: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Dosis', monospace !important;
+}
+@media screen and (max-width: 400px) {
+  .react-calendar {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.react-calendar__navigation {
+  background-color: #eea0aa;
+  color: #000;
+  min-height: 70px;
+  line-height: 1.5em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f6cbd1 !important;
+}
+
+.react-calendar__tile--now {
+  background: #f6cbd1 !important;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #f6cbd1 !important;
+}
+
+.react-calendar__tile--hasActive {
+  background: #eea0aa !important;
+  color: black !important;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #eea0aa !important;
+}
+
+.react-calendar__tile--active {
+  background: #eea0aa !important;
+  color: black !important;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #eea0aa !important;
+}
 @tailwind components;
+.modal {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
 @tailwind utilities;
