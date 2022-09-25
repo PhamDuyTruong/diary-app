@@ -6,6 +6,7 @@ import {LanguageContext} from '../../context/Language';
 import Time from '../../utils/Time';
 
 import ReminderList from './ReminderList';
+import ReminderForm from './ReminderForm'
 
 const CalendarView = () => {
     const [reminder, setReminder] = useState("");
