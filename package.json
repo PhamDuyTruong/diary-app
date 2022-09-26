@@ -18,7 +18,7 @@
     "uuidv4": "^6.2.11"
   },
   "scripts": {
-    "start": "cross-env PORT=3000 craco start",
+    "start": "cross-env craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"

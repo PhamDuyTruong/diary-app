@@ -5,10 +5,10 @@ import { Text } from '../context/Language';
 const MainNav = () => (
   <div className="sm:w-96 w-80 flex justify-around m-2 text-lg">
     <NavLink to="/" exact>
-      <Text tid="homePage" />
+      <Text tid="homeView" />
     </NavLink>
     <NavLink to="/profile" exact>
-      <Text tid="profile" />
+      <Text tid="profileView" />
     </NavLink>
     <NavLink to="/calendar" exact>
       <Text tid="calendarView" />
