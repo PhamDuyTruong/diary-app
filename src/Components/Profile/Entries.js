@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import Entry from "./Entry";
+import React, { useState } from 'react';
+import Entry from './Entry';
 
-const Entries = (props) => {
-  const { entry, handleEditClick, handleDeleteClick } = props;
+const Entries = ({ entry, handleEditClick, handleDeleteClick }) => {
   const [showEntry, setShowEntry] = useState(false);
 
   const handleEntryClose = () => setShowEntry(false);
   const handleEntryShow = () => setShowEntry(true);
+
   return (
     <>
-      {showEntry && (
-        <div className="opacity-30 fixed inset-0 z-40 bg-black"></div>
-      )}
+      {showEntry && <div className="opacity-30 fixed inset-0 z-40 bg-black" />}
       <button
         type="button"
         key={entry.id}
@@ -23,12 +21,12 @@ const Entries = (props) => {
           <p className="bg-white px-2 py-4">{entry.title}</p>
         </div>
       </button>
-      <Entry 
+      <Entry
         entry={entry}
         onEditClick={handleEditClick}
-        onDeleteClick={handleDeleteClick}   
-         showEntry={showEntry}
-         handleEntryClose={handleEntryClose}
+        onDeleteClick={handleDeleteClick}
+        showEntry={showEntry}
+        handleEntryClose={handleEntryClose}
       />
     </>
   );

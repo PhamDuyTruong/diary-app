@@ -1,23 +1,22 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/Language';
 
-const EntryForm = (props) => {
-  const {
-    entry,
-    onAddFormSubmit,
-    onAddInputChange,
-    onHandleDateChange,
-    onHandleMoodChange,
-    date,
-    title,
-    showModal,
-    onClose,
-    onTitleChange,
-  } = props;
-
-  const showHideModal = showModal ? "block" : "hidden";
+const EntryForm = ({
+  entry,
+  onAddFormSubmit,
+  onAddInputChange,
+  onHandleDateChange,
+  onHandleMoodChange,
+  date,
+  title,
+  showModal,
+  onClose,
+  onTitleChange,
+}) => {
+  const showHideModal = showModal ? 'block' : 'hidden';
   const isInvalid = entry === '' || title === '';
   const { dictionary } = useContext(LanguageContext);
+
   return (
     <div
       className={`container sm:w-3/5 mx-auto modal shadow-2xl h-3/5 sm:h-full 
@@ -104,10 +103,10 @@ const EntryForm = (props) => {
         className="absolute top-4 left-4 rounded-full w-10 h-10 flex
         justify-center bg-lila-dark shadow-2xl items-center"
       >
-        <img src="../../assets/img/icons/close.svg" alt="X" width="20" height="20" />
+        <img src="/img/icons/close.svg" alt="X" width="20" height="20" />
       </button>
     </div>
-  )
+  );
 };
 
 export default EntryForm;

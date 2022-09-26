@@ -1,9 +1,9 @@
-import React, {Suspense, lazy} from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Loading from './utils/Loading';
 import { useAuth0 } from '@auth0/auth0-react';
-import {LanguageProvider} from './context/Language';
+import { LanguageProvider } from './context/Language';
 import LanguageOption from './Components/LanguageOption';
 import './index.css';
 import ProtectedRoute from './auth/protected-route';
@@ -13,11 +13,11 @@ const Calendar = lazy(() => import("./views/calendar"));
 const Profile = lazy(() => import("./views/profile"))
 
 function App() {
-    const { isLoading } = useAuth0();
+  const { isLoading } = useAuth0();
 
-    if (isLoading) {
-      return <Loading />;
-    }
+  if (isLoading) {
+    return <Loading />;
+  }
   
   return (
      <LanguageProvider>

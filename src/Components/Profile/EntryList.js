@@ -2,11 +2,13 @@ import React from 'react';
 import Entries from './Entries';
 import { Text } from '../../context/Language';
 
-const EntryList = (props) => {
-  const { entries, setEntries, handleEditClick, handleDeleteClick } = props;
-
-  return (
-    <>
+const EntryList = ({
+  entries,
+  setEntries,
+  handleEditClick,
+  handleDeleteClick,
+}) => (
+  <>
     {!entries ||
       (entries.length === 0 && (
         <div
@@ -16,7 +18,7 @@ const EntryList = (props) => {
           <p>
             <Text tid="entryWarning" />
           </p>
-          <img src="../../assets/img/pics/kawai3.png" alt="kawai-3" width="75%" />
+          <img src="/img/pics/kawai3.png" alt="" width="75%" />
         </div>
       ))}
     {entries.map((entry) => (
@@ -30,7 +32,6 @@ const EntryList = (props) => {
       />
     ))}
   </>
-  )
-};
+);
 
 export default EntryList;

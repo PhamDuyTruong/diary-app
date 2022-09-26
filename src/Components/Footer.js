@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
-import {LanguageContext} from '../context/Language';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../context/Language';
 
 const Footer = () => {
-    const {dictionary} = useContext(LanguageContext);
+  const { dictionary } = useContext(LanguageContext);
   return (
     <footer className="container text-center pt-36 sm:py-16 text-lg tracking-wider mx-auto">
       <p>
@@ -23,6 +23,6 @@ const Footer = () => {
       </p>
     </footer>
   )
-}
+};
 
-export default Footer
+export default Footer;

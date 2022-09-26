@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-const AuthProvider = ({children}) => {
+const AuthProvider = ({ children }) => {
     const history = useHistory();
     const domain = 'dev-hgxnpkps.eu.auth0.com';
     const clientId = 'rnlzJ89VAm21PiIp2yJFKrjiMRrerqv8';
