@@ -1,5 +1,6 @@
 import React from "react";
-import MainNav from './MainNav'
+import MainNav from './MainNav';
+import AuthNav from './AuthNav'
 
 const Navbar = () => {
   return (
@@ -16,6 +17,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-center flex-wrap">
             <MainNav />
+            <AuthNav />
         </div>
       </nav>
     </div>
