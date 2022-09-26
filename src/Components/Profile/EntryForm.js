@@ -104,7 +104,7 @@ const EntryForm = (props) => {
         className="absolute top-4 left-4 rounded-full w-10 h-10 flex
         justify-center bg-lila-dark shadow-2xl items-center"
       >
-        <img src="/img/icons/close.svg" alt="X" width="20" height="20" />
+        <img src="../../assets/img/icons/close.svg" alt="X" width="20" height="20" />
       </button>
     </div>
   )
