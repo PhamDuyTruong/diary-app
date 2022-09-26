@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: false,
   theme: {
     colors: {
       lila: {
@@ -39,6 +40,11 @@ module.exports = {
       zIndex: {
         '-10': '-10',
       },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ['hover', 'focus'],
     },
   },
   plugins: [],

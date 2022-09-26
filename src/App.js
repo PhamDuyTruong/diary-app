@@ -9,6 +9,7 @@ import './index.css';
 
 const Home = lazy(() => import("./Components/HomePage"));
 const Calendar = lazy(() => import("./Components/Calendar"));
+const Profile = lazy(() => import("./Components/Profile"))
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
                        </Route>
                        <Route exact path="/calendar">
                            <Calendar />
+                       </Route>
+                       <Route exact path="/profile">
+                            <Profile />
                        </Route>
                   </Switch>
               </Suspense>

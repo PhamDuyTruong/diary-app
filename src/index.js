@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AuthProvider from './auth/auth-provider';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <AuthProvider>
+       <App />
+    </AuthProvider>
+  </Router>,
   document.getElementById('root')
 );
 
