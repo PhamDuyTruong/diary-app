@@ -1,9 +1,9 @@
 import React from 'react';
 import Entries from './Entries';
-import {Text} from '../../context/Language'
+import { Text } from '../../context/Language';
 
 const EntryList = (props) => {
-   const {entries, setEntries, handleEditClick, handleDeleteClick} = props;
+  const { entries, setEntries, handleEditClick, handleDeleteClick } = props;
 
   return (
     <>
@@ -31,6 +31,6 @@ const EntryList = (props) => {
     ))}
   </>
   )
-}
+};
 
-export default EntryList
+export default EntryList;

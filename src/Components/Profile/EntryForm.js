@@ -1,23 +1,23 @@
-import React, {useContext} from 'react';
-import {LanguageContext} from '../../context/Language'
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/Language';
 
 const EntryForm = (props) => {
   const {
     entry,
-  onAddFormSubmit,
-  onAddInputChange,
-  onHandleDateChange,
-  onHandleMoodChange,
-  date,
-  title,
-  showModal,
-  onClose,
-  onTitleChange,
+    onAddFormSubmit,
+    onAddInputChange,
+    onHandleDateChange,
+    onHandleMoodChange,
+    date,
+    title,
+    showModal,
+    onClose,
+    onTitleChange,
   } = props;
 
   const showHideModal = showModal ? "block" : "hidden";
   const isInvalid = entry === '' || title === '';
-  const {dictionary} = useContext(LanguageContext);
+  const { dictionary } = useContext(LanguageContext);
   return (
     <div
       className={`container sm:w-3/5 mx-auto modal shadow-2xl h-3/5 sm:h-full 
@@ -108,6 +108,6 @@ const EntryForm = (props) => {
       </button>
     </div>
   )
-}
+};
 
-export default EntryForm
+export default EntryForm;
