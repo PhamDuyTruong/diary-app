@@ -12,20 +12,12 @@ const HomePage = () => (
         <Text tid="section-1" />
       </h3>
       <img
-        src="/img/pics/kanji.png"
+        src="/img/pics/Banner-Carol.jpg"
         alt=""
-        width="150"
-        className="absolute right-80 top-96 hidden xl:block"
+        width="650"
+        height="500"
+        className="absolute right-5 -top-32 hidden xl:block"
       />
-      <img
-        src="/img/pics/takoyaki.png"
-        alt=""
-        width="550"
-        className="absolute right-0 -top-32 hidden xl:block"
-      />
-      <h2 className="text-center mt-24 text-4xl font-thin">
-        <img src="/img/pics/good-luck.png" alt="good luck" width="50%" />
-      </h2>
     </section>
     <section
       className="flex justify-around text-center h-full w-full bg-opacity-60 
