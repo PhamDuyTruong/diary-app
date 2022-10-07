@@ -7,10 +7,10 @@ const NavBar = () => (
     <nav className="h-full flex justify-around flex-wrap">
       <div className="flex items-center py-4">
         <img
-          src="/img/logo.png"
+          src="/img/diary.jpg"
           alt="welcome message"
-          className="w-6/12"
-          width="50"
+          className="w-1/12"
+          width="20"
           height="20"
         />
       </div>
