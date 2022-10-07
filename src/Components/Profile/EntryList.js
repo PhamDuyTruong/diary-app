@@ -18,7 +18,7 @@ const EntryList = ({
           <p>
             <Text tid="entryWarning" />
           </p>
-          <img src="/img/pics/kawai3.png" alt="" width="75%" />
+          <img src="/img/pics/How.jpg" alt="" width="75%" />
         </div>
       ))}
     {entries.map((entry) => (

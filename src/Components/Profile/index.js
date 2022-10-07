@@ -141,14 +141,14 @@ const Profile = () => {
           rounded-tr-none rounded-b-2xl rounded-bl-none mt-6 relative"
         >
           <img
-            src="/img/pics/flowers-right.png"
+            src="/img/pics/Laptop.jpg"
             alt=""
             width="100"
             className="absolute -right-8 -top-10"
           />
           {/* <Quote /> */}
           <img
-            src="/img/pics/flowers-left.png"
+            src="/img/pics/books.jpg"
             alt=""
             width="70"
             className="absolute -left-7 -bottom-7"

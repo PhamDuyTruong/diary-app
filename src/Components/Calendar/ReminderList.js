@@ -15,7 +15,7 @@ const ReminderList = (props) => {
           <p>
             <Text tid="calendarWarning" />
           </p>
-          <img src="/img/pics/kawai2.png" alt="" />
+          <img src="/img/pics/reminder.jpg" height="100%" alt="" />
         </div>
       ))}
     <ul>
