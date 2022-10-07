@@ -35,10 +35,10 @@ const HomePage = () => (
           <Text tid="section-2" />
         </h3>
         <img
-          src="/img/pics/kawai1.png"
+          src="/img/pics/Illu1.jpg"
           alt=""
-          width=""
-          className="sm:absolute bottom-0 left-0 right-0 mx-auto w-24 sm:w-44
+          width="100%"
+          className="sm:absolute bottom-2 left-0 right-0 mx-auto w-24 sm:w-44
           xl:w-56"
         />
       </div>
@@ -53,10 +53,11 @@ const HomePage = () => (
           <Text tid="section-3" />
         </h3>
         <img
-          src="/img/pics/kawai3.png"
+          src="/img/pics/Illu2.jpg"
           alt=""
-          width="60%"
-          className="sm:absolute bottom-0 left-0 right-0 mx-auto w-24 sm:w-36
+          width="100%"
+          height="100%"
+          className="sm:absolute bottom-10 left-0 right-0 mx-auto w-24 sm:w-36
           xl:w-52"
         />
       </div>
@@ -71,10 +72,10 @@ const HomePage = () => (
           <Text tid="section-4" />
         </h3>
         <img
-          src="/img/pics/kawai2.png"
+          src="/img/pics/Illu3.jpg"
           alt=""
-          width="60%"
-          className="sm:absolute bottom-0 left-0 right-0 mx-auto w-24 sm:w-44
+          width="100%"
+          className="sm:absolute bottom-2 left-0 right-0 mx-auto w-24 sm:w-44
           xl:w-56"
         />
       </div>
