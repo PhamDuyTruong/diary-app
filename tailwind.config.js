@@ -34,6 +34,9 @@ module.exports = {
         light: '#d1d5db',
         dark: '#898D90',
       },
+      yellow: {
+        light: "#fef08a"
+      }
     },
     extend: {
       animation: {
