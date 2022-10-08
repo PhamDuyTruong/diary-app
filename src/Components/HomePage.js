@@ -21,11 +21,11 @@ const HomePage = () => (
     </section>
     <section
       className="flex justify-around text-center h-full w-full bg-opacity-60 
-    bg-white-base sm:mt-48 py-8 rounded-3xl flex-wrap"
+    bg-cyan-300 sm:mt-48 py-8 rounded-3xl flex-wrap"
     >
       <div
-        className="sm:w-1/4 px-4 sm:px-0 bg-gradient-to-br from-green-light 
-      to-green-dark rounded-md shadow-md py-2 relative w-full m-2 sm:m-0
+        className="sm:w-1/4 px-4 sm:px-0 bg-gradient-to-br from-rose-light 
+      to-rose-dark rounded-md shadow-md py-2 relative w-full m-2 sm:m-0
       sm:h-96"
       >
         <h2 className="text-2xl py-4 text-lila-dark">
@@ -62,8 +62,8 @@ const HomePage = () => (
         />
       </div>
       <div
-        className="sm:w-1/4 px-4 sm:px-0 bg-gradient-to-br from-gray-light 
-      to-gray-dark rounded-md shadow-md py-2 relative w-full m-2 sm:m-0 sm:h-96"
+        className="sm:w-1/4 px-4 sm:px-0 bg-gradient-to-br from-green-light
+      to-green-dark rounded-md shadow-md py-2 relative w-full m-2 sm:m-0 sm:h-96"
       >
         <h2 className="text-2xl py-4 text-gray-dark">
           <Text tid="sectionHeader-4" />
