@@ -6,6 +6,7 @@ import EditEntry from './EditEntry';
 import EntryList from './EntryList';
 import EntryForm from './EntryForm';
 import { LanguageContext } from '../../context/Language';
+import Quote from './Quote'
 
 const Profile = () => {
   const { user } = useAuth0();
@@ -143,10 +144,10 @@ const Profile = () => {
           <img
             src="/img/pics/Laptop.jpg"
             alt=""
-            width="100"
+            width="70"
             className="absolute -right-8 -top-10"
           />
-          {/* <Quote /> */}
+          <Quote />
           <img
             src="/img/pics/books.jpg"
             alt=""
