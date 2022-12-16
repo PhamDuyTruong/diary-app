@@ -66,8 +66,7 @@ const ReminderForm = ({
             <Text tid="calendarButton" />
           </button>
         </fieldset>
-      </form>
-      <button
+        <button
         type="button"
         onClick={onClose}
         className="absolute top-4 left-4 rounded-full w-10 h-10 flex 
@@ -75,6 +74,8 @@ const ReminderForm = ({
       >
         <img src="/img/icons/close.svg" alt="X" width="20" height="20" />
       </button>
+      </form>
+     
     </div>
   );
 };

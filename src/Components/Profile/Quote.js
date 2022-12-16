@@ -21,7 +21,7 @@ const Quote = () => {
      setIsLoading(true);
      setError(false)
      try{
-        const res = await fetch('https://quotes.rest/qod.json?category=inspire');
+        const res = await fetch('https://quotes.rest/qod.json?category=love');
         const json = await res.json();
         setQuote(json.contents.quotes[0].quote);
         setAuthor(json.contents.quotes[0].author);

@@ -19,7 +19,7 @@ const ReminderList = (props) => {
         </div>
       ))}
     <ul>
-      {reminders.map((reminder) => (
+      {reminders && reminders.map((reminder) => (
         <Reminder
           key={reminder.id}
           reminder={reminder}

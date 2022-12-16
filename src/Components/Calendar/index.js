@@ -20,6 +20,7 @@ const CalendarView = () => {
     }
     return [];
   });
+  console.log(reminders)
   const [showModal, setShowModal] = useState(false);
   const handleClose = (e) => {
     e.preventDefault();
@@ -34,7 +35,7 @@ const CalendarView = () => {
 
   const handleReminderSubmitForm = (e) => {
     e.preventDefault();
-    if (reminder !== "") {
+    if (reminder !== '') {
       setReminders([
         ...reminders,
         {
@@ -46,7 +47,7 @@ const CalendarView = () => {
         },
       ]);
     }
-    setReminders("");
+    setReminder('');
   };
   const handleDateChange = (e) => {
     setReminderDate(e.target.value);
@@ -54,8 +55,8 @@ const CalendarView = () => {
   const handleReminderChange = (e) => {
     setReminder(e.target.value);
   };
-  const onCalendarChange = (e) => {
-    setDate(e);
+  const onCalendarChange = (today) => {
+    setDate(today);
   };
   const handleDeleteClick = (id) => {
     if (window.confirm(dictionary.reminderDelete)) {
@@ -87,7 +88,7 @@ const CalendarView = () => {
             locale={dictionary.lang}
           />
         </div>
-        <div className="text-center relative flex felx-col h-full justify-around">
+        <div className="text-center relative flex flex-col h-full justify-around">
           <h2 className="text-2xl sm:pb-2">
             {date.toLocaleString().slice(0, 10)}, <Time />
           </h2>
