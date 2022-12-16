@@ -29,8 +29,8 @@ function App() {
               <Suspense fallback={<Loading />}>
                   <Switch>
                     <Route exact path="/" component={Home} />
-                     <ProtectedRoute path="/profile" component={Profile} />
-                    <ProtectedRoute path="/calendar" component={Calendar} />
+                     <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/calendar" component={Calendar} />
                   </Switch>
               </Suspense>
           </div>

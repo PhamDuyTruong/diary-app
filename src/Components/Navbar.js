@@ -16,7 +16,7 @@ const NavBar = () => (
       </div>
       <div className="flex items-center flex-wrap justify-center">
         <MainNav />
-        <AuthNav />
+        {/* <AuthNav /> */}
       </div>
     </nav>
   </div>

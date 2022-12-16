@@ -15,6 +15,7 @@ const Entry = ({
 }) => {
   const showHideModal = showEntry ? 'block' : 'hidden';
   const { dictionary } = useContext(LanguageContext);
+  console.log(entry)
 
   return (
     <div

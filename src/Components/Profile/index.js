@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
 import { v4 as uuid } from 'uuid';
 import AddEntry from './AddEntry';
 import EditEntry from './EditEntry';
@@ -9,8 +8,8 @@ import { LanguageContext } from '../../context/Language';
 import Quote from './Quote'
 
 const Profile = () => {
-  const { user } = useAuth0();
-  const { name } = user;
+  //const { user } = useAuth0();
+  //const { name } = user;
   const [entry, setEntry] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [currentEntry, setCurrentEntry] = useState({});
@@ -115,7 +114,7 @@ const Profile = () => {
       <div className="container py-8">
         <h1 className="text-center text-3xl">
           {dictionary.profileHeader}
-          {name}?
+          {/* {name}? */}
         </h1>
       </div>
       <EntryForm
