@@ -17,6 +17,9 @@
     "uuid": "^8.3.2",
     "uuidv4": "^6.2.11"
   },
+  "engines": {
+    "node": "17.x"
+  },
   "scripts": {
     "start": "cross-env  PORT=3000 craco start  --openssl-legacy-provider start",
     "build": "craco build --openssl-legacy-provider build",
